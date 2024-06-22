@@ -18,7 +18,7 @@ class NewsProvider with ChangeNotifier {
   static const String techCrunchBaseurl =
       'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=';
   static const String teslaBaseurl =
-      'https://newsapi.org/v2/everything?q=tesla&from=2024-05-20&sortBy=publishedAt&apiKey=';
+      'https://newsapi.org/v2/everything?q=tesla&from=2024-05-26&to=2024-05-26&sortBy=publishedAt&apiKey=';
   static const String businessBaseurl =
       'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=';
   static const String wallStreetJournal =

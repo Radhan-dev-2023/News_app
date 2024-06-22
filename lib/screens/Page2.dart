@@ -37,9 +37,9 @@ class _Page2State extends State<Page2> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               mediumSpacing(context, 0.05),
-              const Text(
+               Text(
                 "Explore News,",
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600,color: Colors.blueGrey),
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600,color: blueGrey),
               ),
 
               mediumSpacing(context, 0.009),

@@ -37,9 +37,9 @@ class _Page4State extends State<Page4> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               mediumSpacing(context, 0.05),
-              const Text(
+               Text(
                 "Explore News of Business,",
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600,color: Colors.blueGrey),
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600,color: blueGrey),
               ),
               mediumSpacing(context, 0.009),
               Consumer(builder: (BuildContext context, NewsProvider newsProvider, _){

@@ -6,7 +6,7 @@ import 'package:news_app/model/model.dart';
 import 'package:news_app/widgets/rich_text.dart';
 import 'package:news_app/widgets/spacing.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 
 import 'news_provider.dart';
 
@@ -28,7 +28,7 @@ class _NewsDetailedScreenState extends State<NewsDetailedScreen> {
         backgroundColor: appColor,
         title: const Text(
           "News Details",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          style: TextStyle(fontWeight: FontWeight.bold, color: buttonTextColor),
         ),
       ),
       body: SingleChildScrollView(
@@ -48,9 +48,9 @@ class _NewsDetailedScreenState extends State<NewsDetailedScreen> {
                     top: 0,
                     right: 0,
                     child: IconButton(
-                      icon: const Icon(
+                      icon:  Icon(
                         Icons.favorite_outline,
-                        color: Colors.red,
+                        color: red,
                         size: 32,
                       ),
                       onPressed: () {
@@ -69,45 +69,30 @@ class _NewsDetailedScreenState extends State<NewsDetailedScreen> {
               CustomRichText(
                   boldText: 'Source: ',
                   italicText: widget.album.source.name,
-                  italicTextColor: Colors.red),
+                  italicTextColor: red),
               mediumSpacing(context, 0.03),
               Text(
                 widget.album.description,
-                style: const TextStyle(
+                style:  TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
-                    color: Colors.blueGrey),
+                    color: blueGrey),
               ),
               mediumSpacing(context, 0.03),
               CustomRichText(
                   boldText: 'Author: ',
                   italicText: widget.album.author,
-                  italicTextColor: Colors.orange),
+                  italicTextColor: orange),
               mediumSpacing(context, 0.03),
               Text(
                 '${widget.album.content}',
-                style: const TextStyle(
+                style:  TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
-                    color: Colors.green),
+                    color: green),
               ),
               mediumSpacing(context, 0.03),
-              /*GestureDetector(
-                  onTap: () async {
-                    final url = widget.album.url;
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not launch $url';
-                    }
-                  },
-                  child: Text(
-                    widget.album.url,
-                    style: TextStyle(
-                        fontSize: 16,
-                        color: linkColor,
-                        fontWeight: FontWeight.bold),
-                  )),*/
+
               CustomRichText(
                   boldText: 'Link to Original Article :\n\n',
                   italicText: widget.album.url,
@@ -118,10 +103,10 @@ class _NewsDetailedScreenState extends State<NewsDetailedScreen> {
                 children: [
                   Text(
                     "Published At: ${DateFormat('dd/MM/yyyy').format((widget.album.publishedAt))}",
-                    style: const TextStyle(
+                    style:  TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
-                        color: Colors.grey),
+                        color: grey),
                   ),
                 ],
               ),

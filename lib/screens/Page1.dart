@@ -50,12 +50,12 @@ class _Page1State extends State<Page1> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                   Text(
                     "Explore News,",
                     style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.w600,
-                        color: Colors.blueGrey),
+                        color: blueGrey),
                   ),
                   IconButton(
                       onPressed: () {
@@ -253,7 +253,7 @@ class _Page1State extends State<Page1> {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 24,
-                        color: Colors.black),
+                        color: blackColor),
                   ),
                   RadioListTile(
                     title: const Text('Entertainment'),
@@ -332,7 +332,7 @@ class _Page1State extends State<Page1> {
                         'Apply Filter',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: buttonTextColor,
                         ),
                       ),
                     ),
